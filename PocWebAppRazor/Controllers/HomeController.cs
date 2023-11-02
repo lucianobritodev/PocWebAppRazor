@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PocWebAppRazor.Models;
+using PocWebAppRazor.Models.ViewModels;
 
 namespace PocWebAppRazor.Controllers;
 

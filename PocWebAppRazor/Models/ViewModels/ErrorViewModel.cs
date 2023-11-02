@@ -1,4 +1,4 @@
-namespace PocWebAppRazor.Models;
+namespace PocWebAppRazor.Models.ViewModels;
 
 public class ErrorViewModel
 {
