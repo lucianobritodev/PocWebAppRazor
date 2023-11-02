@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using PocWebAppRazor.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PocWebAppRazorContext>(options => options
+        .UseSqlite(builder.Configuration.GetConnectionString("PocWebAppRazorContext") 
+                      ?? throw new InvalidOperationException("Connection string 'PocWebAppRazorContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
